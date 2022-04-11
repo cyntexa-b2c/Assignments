@@ -22,37 +22,45 @@
             <div class="div-box appendMe">
                <div class="button-wala-div btn-group">
                   <div class="container-fluid" id="mark1">
-                     <select
+                     <button
                         id="selectC"
-                        class="form-select form-select-lg mb-3"
+                        class="form-select form-select-lg mb-3 changeCur"
                         aria-label=".form-select-lg example"
                         style="
-                           min-width: 100%;
+                           min-width: 150px;
+                           border-style: dotted;
+                           border-radius: 5%;
                            background-color: #0091ff;
                            min-height: 100%;
                         "
                      >
-                        <option class="d-none">Select currency:</option>
-                        <option name="EUR" value="EUR" class="d-none EURclass1">
-                           EUR
-                        </option>
-                        <option name="INR" value="INR" class="d-none EURclass1">
-                           INR
-                        </option>
-                     </select>
-                  </div>
-               </div>
-               <div class="ml-3">
-                  <div>
-                     <button id="optNS" class="SELECTclass1">
                         Select currency:
                      </button>
                   </div>
+               </div>
+               <div class="ml-3 hideme" style="min-width: 150px">
+                  <!-- <div>
+                     <button id="optNS" class="SELECTclass1">
+                        Select currency:
+                     </button>
+                  </div> -->
                   <div>
-                     <button id="optNS" class="EURclass1">EUR</button>
+                     <button
+                        id="optNS"
+                        class="EURclass"
+                        style="border-radius: 1.1%; min-width: 150px"
+                     >
+                        EUR
+                     </button>
                   </div>
                   <div>
-                     <button id="optNS" class="EURclass1">INR</button>
+                     <button
+                        id="optNS"
+                        class="INRclass"
+                        style="min-width: 150px"
+                     >
+                        INR
+                     </button>
                   </div>
                </div>
                <div class="mt-5">

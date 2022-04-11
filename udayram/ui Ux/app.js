@@ -1,6 +1,7 @@
-const slec = document.querySelector("#mark1");
+// const slec = document.querySelector("#mark1");
 
 let amountVal,
+   currencyTpye,
    statusVal,
    EURval,
    USDval,
@@ -16,6 +17,7 @@ I can use static values late for concersions,
   ----------*/
 
 $(document).ready(function () {
+   $(".hideme").toggle();
    //$("button").click(function () {
    $.get(
       "http://api.exchangeratesapi.io/v1/latest?access_key=d78ccad0e0ba35c8175662df6c3d9930",
@@ -29,10 +31,28 @@ $(document).ready(function () {
    );
 });
 
+$(".EURclass").click(function () {
+   currencyTpye = "EUR";
+   $(".changeCur").text(`${currencyTpye}`);
+
+   // console.log();
+});
+$(".INRclass").click(function () {
+   currencyTpye = "INR";
+
+   $(".changeCur").text(`${currencyTpye}`);
+});
+$(".INRclass,.EURclass").click(function () {
+   $(".hideme").toggle();
+});
+
+$("#mark1").click(function () {
+   $(".hideme").toggle();
+});
 /*----------  click button function  ----------*/
 
 $(".button-wala-2 button").click(function () {
-   let currencyTpye = $("#selectC").val();
+   //currencyTpye = $("#selectC").val();
 
    /*----------  To check weather input is number or not  ----------*/
    if ($.isNumeric(`${$("input").val()}`)) {
