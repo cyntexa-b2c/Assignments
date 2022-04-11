@@ -22,21 +22,13 @@
     /* padding: 1p; */
     
 }
-/* .btn-primary{
-    /* position: relative; */
-    /* margin-top: 10px;
-} */
-.button-wala-div{
-    /* position:; */
-
-    margin-bottom: 50%;
-    /* margin-left:10%; */
+#optNS:hover{
+  background-color: #1060bb;
 }
-/* //.button-wala-2{ */
-    /* position:;
-    margin-bottom: 20%;
-} */
-
+#optNS{
+  background-color:#0077FF;
+  min-width: 70%;
+}
 
 body {
   height: 100vh;
@@ -48,6 +40,8 @@ body {
 
 * {
   box-sizing: border-box;
+  /* border-color: #000;
+  border-radius: 3px; */
 }
 
 .inp {

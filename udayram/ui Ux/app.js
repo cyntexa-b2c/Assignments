@@ -1,3 +1,5 @@
+const slec = document.querySelector("#mark1");
+
 let amountVal,
    statusVal,
    EURval,
