@@ -21,24 +21,19 @@
          >
             <div class="div-box appendMe">
                <div class="button-wala-div btn-group">
-                  <div class="container-fluid" id="mark1">
+                  <div class="container-fluid" style="display: flex" id="mark1">
                      <button
                         id="selectC"
-                        class="form-select form-select-lg mb-3 changeCur"
+                        class="dropdown-up form-select form-select-lg text-left mb-3 changeCur"
                         aria-label=".form-select-lg example"
-                        style="
-                           min-width: 150px;
-                           border-style: dotted;
-                           border-radius: 5%;
-                           background-color: #0091ff;
-                           min-height: 100%;
-                        "
                      >
                         Select currency:
                      </button>
+                     <span class="down-icon1 downicon-1 tileme1">&#9660;</span>
+                     <span class="down-icon1 upicon-hideme2">&#9650;</span>
                   </div>
                </div>
-               <div class="ml-3 hideme" style="min-width: 150px">
+               <div class="ml-3 hideme" style="min-width: 170px">
                   <!-- <div>
                      <button id="optNS" class="SELECTclass1">
                         Select currency:
@@ -47,7 +42,7 @@
                   <div>
                      <button
                         id="optNS"
-                        class="EURclass"
+                        class="EURclass text-left"
                         style="border-radius: 1.1%; min-width: 150px"
                      >
                         EUR
@@ -56,7 +51,7 @@
                   <div>
                      <button
                         id="optNS"
-                        class="INRclass"
+                        class="text-left INRclass"
                         style="min-width: 150px"
                      >
                         INR
@@ -73,6 +68,9 @@
                      />
                      <span class="label">Label</span>
                      <span class="focus-bg"></span>
+                     <div>
+                        <p id="statusB" class="d-none d-sm-block d-md-none"></p>
+                     </div>
                   </label>
                </div>
                <div
@@ -96,12 +94,12 @@
                      Get USD Value
                   </button>
                </div>
-               <p id="statusA"></p>
+               <p id="statusA" class="d-none d-lg-block d-md-block"></p>
             </div>
 
             <div class="line div-box d-none d-lg-block d-md-block"></div>
 
-            <div class="div-box" id="test">{{Value In USD}}</div>
+            <div class="div-box" id="test ">{{Value In USD}}</div>
          </div>
          <!-- <p id="test">hii</p> -->
       </div>

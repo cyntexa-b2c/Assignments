@@ -5,6 +5,37 @@
     border-radius: 10px;
     background-color: rgba(0, 0, 0, 0.496);
 }
+#selectC{
+  min-width: 150px;
+  border-style: dotted;
+  border-radius: 5%;
+  max-height: 15px;
+  background-color: #0091ff;
+  min-height: 100%;
+}
+button{
+  color: azure;
+  /* min-width: 20px; */
+}
+.down-icon1{
+  color: #ffffff;
+  font-size: 13px;
+  align-content: right;
+  /* margin-right: 10px; */
+  /* align-items: flex-end; */
+  float: right;
+  /* position: relative; */
+  color: #ffffff;
+  font-size: 13px;
+  padding-top: 5px;
+  order: 1;
+  /* background-color: red; */
+  position: absolute;
+  padding-left: 127px;
+  /* float: right; */
+  /* align-self: self-end; */
+  /* margin-right: 29px; */
+}
 
 .main-container{
     margin-top: 10rem;

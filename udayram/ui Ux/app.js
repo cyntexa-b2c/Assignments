@@ -18,6 +18,10 @@ I can use static values late for concersions,
 
 $(document).ready(function () {
    $(".hideme").toggle();
+   $(".upicon-hideme2").toggle();
+   // $(".down-icon1").text("&#9660;");
+   // $(".append-icon-here").append($("<span>&#9660;</span>"));
+   // $(".down-icon1")
    //$("button").click(function () {
    $.get(
       "http://api.exchangeratesapi.io/v1/latest?access_key=d78ccad0e0ba35c8175662df6c3d9930",
@@ -34,20 +38,37 @@ $(document).ready(function () {
 $(".EURclass").click(function () {
    currencyTpye = "EUR";
    $(".changeCur").text(`${currencyTpye}`);
+   // $(".append-icon-here,.changeCur").append(
+   //    $("<span class='down-icon1 append-icon-here'></span>")
+   // );
+
+   // $(".down-icon1").text("&#9650;");
 
    // console.log();
 });
 $(".INRclass").click(function () {
    currencyTpye = "INR";
-
+   // $(".append-icon-here").append($("<span>&#9660;</span>"));
    $(".changeCur").text(`${currencyTpye}`);
 });
 $(".INRclass,.EURclass").click(function () {
-   $(".hideme").toggle();
+   // $(".tileme1").toggle();
+   // $(".tileme2").toggle();
+   $(".upicon-hideme2").toggle();
+   $(".downicon-1").toggle();
+   $(".hideme").toggle(function () {
+      // console.log(222);
+      // $(".down-icon1").text("&#9660;");
+   });
 });
 
 $("#mark1").click(function () {
    $(".hideme").toggle();
+   $(".downicon-1").toggle();
+   $(".upicon-hideme2").toggle();
+   // $(".tileme1").toggle();
+   // $(".tileme2").toggle();
+   // $(".append-icon-here").append($("<span>&#9650;</span>"));
 });
 /*----------  click button function  ----------*/
 
@@ -81,7 +102,7 @@ $(".button-wala-2 button").click(function () {
       Ans = Math.floor(Ans * 100) / 100;
       // console.log($("#test").text());
       $("#test").text(`$${Ans}`);
-      $("#statusA")
+      $("#statusA,#statusB")
          .text(`${statusVal}`)
          .css("color", "green")
          .css("font-weight", "bold")
@@ -89,7 +110,7 @@ $(".button-wala-2 button").click(function () {
          .css("font-size", "1em");
    } else {
       $("#test").text("{{Value In USD}}");
-      $("#statusA")
+      $("#statusA,#statusB")
          .text(`FAILURE`)
          .css("color", "red")
          .css("font-weight", "bold")
